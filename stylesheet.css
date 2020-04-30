@@ -1,0 +1,159 @@
+html, body,
+ul, ol, li,
+h1, h2, h3, h4, h5, h6, p,
+form, input, div {
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: 'PT Sans',sans-serif;
+  background-color:white;
+}
+.container{
+  max-width:1170px;
+  width: 100%;
+  margin:0 auto;
+}
+.header{
+  text-align: center;
+  padding:20px 0 50px 0;
+}
+.choice{
+  height:150px;
+  text-align: center;
+}
+.choice p{
+  margin-bottom: 30px;
+}
+.choice a{
+  font-size:25px
+}
+.btn{
+  color:white;
+  background-color:#0099FF;
+  padding:15px 40px;
+  box-shadow:0 7px #0066CC;
+  display:inline;
+  margin:30px 5px;
+
+}
+.btn:active{
+  position:relative;
+  top:7px;
+  box-shadow:none;
+}
+.dice-contents{
+  height:300px;
+}
+.left-contents{
+  float:left;
+  width:50%;
+  box-sizing: border-box;
+  text-align: center;
+}
+.right-contents{
+  float:right;
+  width:50%;
+  box-sizing: border-box;
+  text-align: center;
+}
+.roll-dice{
+  color:white;
+  background-color:#FF3300;
+  padding:15px 40px;
+  box-shadow:0 7px #CC3300;
+  display:inline-block;
+  margin-bottom:30px;
+}
+.roll-dice:active{
+  position:relative;
+  top:7px;
+  box-shadow:none;
+}
+.roll-dice-blue{
+  background-color:#0099FF;
+  box-shadow:0 7px #0066CC;
+}
+.roll-dice-green{
+  background-color:#00CC00;
+  box-shadow:0 7px #009900;
+}
+.roll-dice-orange{
+  background-color:#FF9900;
+  box-shadow:0 7px #FF6600;
+}
+p{
+  display:block;
+  margin:10px 0;
+  font-size:25px
+}
+img{
+  width:150px;
+  height:150px;
+}
+.squares{
+  overflow-x: auto;
+  white-space: nowrap;
+  -webkit-overflow-scrolling: touch;
+}
+.square {
+  display:inline-block;
+  width: 20%;
+  height: 200px;
+  margin:1px;
+  background-color: #FFF8DC;
+  color:#FFFAFA;
+  border:groove 1px #666666;
+  text-shadow: 3px 2px 2px #808080;
+  text-align: center;
+  line-height: 80px;
+  font-size:40px;
+  position:relative;
+}
+.event-square{
+  background-color: #FFDEAD;
+}
+.fas{
+  padding-right: 80px;
+  font-size:80px;
+  position:absolute;
+  top:85px;
+  left:70px;
+}
+.playerIcon1{
+  color:red;
+  z-index:20;
+}
+.playerIcon2{
+  color:blue;
+  z-index:10;
+}
+.playerIcon3{
+  color:green;
+  z-index:5;
+}
+.playerIcon4{
+  color:orange;
+  z-index:3;
+}
+.result-wrapper {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: 100;
+  display:none;
+}
+.modal {
+  position: absolute;
+  top: 20%;
+  left: 34%;
+  background-color: #e6ecf0;
+  padding: 20px 0 40px;
+  border-radius: 10px;
+  width: 450px;
+  height: auto;
+  text-align: center;
+}
